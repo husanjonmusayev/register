@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sigin.css">
+    <title>Sigin in</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <input type="checkbox" id="signup_toggle">
+
+            <!-- user form  -->
+
+            <form id="form" class="form">
+
+                <!-- siginIn form  -->
+
+                <div class="form_back">
+                    <div class="form_details">Login</div>
+                    <input id="username" placeholder="Username" class="input" type="text">
+                    <input id="email" placeholder="entir email" class="input" type="text">
+                    <input id="password" placeholder="Password" class="input" type="text">
+                    <button id="btnSignIn" class="btn">Login</button>
+                    <span class="switch">Don't have an account?
+                        <label id="back" class="signup_tog" for="signup_toggle">
+                            Sign Up
+                        </label>
+                    </span>
+                </div>
+
+                <!-- siginup form  -->
+
+                <div class="form_front">
+                    <div class="form_details">SignUp</div>
+                    <input id="fristname" placeholder="Firstname" autocomplete="none" class="input" type="text">
+                    <p id="nameError"></p>
+                    <input id="usernameSiginUp" placeholder="Username" autocomplete="none" class="input" type="text">
+                    <p id="usernameError"></p>
+                    <input id="emailSiginUp" placeholder="entir email" class="input" type="text">
+                    <p id="emailErr"></p>
+                    <input id="passwordSiginUp" placeholder="Password" autocomplete="none" class="input" type="number">
+                    <p id="passwordErr"></p>
+                    <button id="sgnUp" class="btn">Signup</button>
+                    <span class="switch">Already have an account?
+                        <label id="new" class="signup_tog" for="signup_toggle">
+                            Sign In
+                        </label>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./sigin.js" type="module"></script>
+</body>
+
+</html>
